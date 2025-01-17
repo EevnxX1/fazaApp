@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:uas_project/home.dart';
 import 'package:uas_project/read.dart';
+import 'package:uas_project/search2.dart';
+import 'package:uas_project/write1.dart';
 
 class detailPage extends StatefulWidget {
   const detailPage({super.key});
@@ -380,7 +383,12 @@ class _detailPageState extends State<detailPage> {
                 size: 28,
               ),
               onPressed: () {
-                
+                Navigator.of(context).push(MaterialPageRoute(
+                  builder: (context) {
+                    return homePage();
+                  }
+                ),
+                );
               },
             ),
             IconButton(
@@ -389,7 +397,12 @@ class _detailPageState extends State<detailPage> {
                 size: 28,
               ),
               onPressed: () {
-                
+                Navigator.of(context).push(MaterialPageRoute(
+                  builder: (context) {
+                    return search2Page();
+                  }
+                ),
+                );
               },
             ),
             IconButton(
@@ -407,7 +420,12 @@ class _detailPageState extends State<detailPage> {
                 size: 28,
               ),
               onPressed: () {
-                
+                Navigator.of(context).push(MaterialPageRoute(
+                  builder: (context) {
+                    return write1Page();
+                  }
+                ),
+                );
               },
             ),
           ],

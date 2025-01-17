@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:uas_project/profile.dart';
+import 'package:uas_project/search1.dart';
+import 'package:uas_project/search2.dart';
+import 'package:uas_project/write1.dart';
 import './detail.dart';
 class homePage extends StatefulWidget {
   const homePage({super.key});
@@ -29,7 +33,12 @@ class _homePageState extends State<homePage> {
             margin: EdgeInsets.only(right: 20, left: 20),
             child: InkWell(
             onTap: () {
-              
+              Navigator.of(context).push(MaterialPageRoute(
+                  builder: (context) {
+                    return profilePage();
+                  }
+                ),
+                );
             },
             child: Image.asset('assets/iconProfile.png'),
           ),
@@ -488,7 +497,12 @@ class _homePageState extends State<homePage> {
                 size: 28,
               ),
               onPressed: () {
-                
+                Navigator.of(context).push(MaterialPageRoute(
+                  builder: (context) {
+                    return search2Page();
+                  }
+                ),
+                );
               },
             ),
             IconButton(
@@ -506,7 +520,12 @@ class _homePageState extends State<homePage> {
                 size: 28,
               ),
               onPressed: () {
-                
+                Navigator.of(context).push(MaterialPageRoute(
+                  builder: (context) {
+                    return write1Page();
+                  }
+                ),
+                );
               },
             ),
           ],

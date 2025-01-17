@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:uas_project/home.dart';
+import 'package:uas_project/search2.dart';
+import 'package:uas_project/write1.dart';
 
 class readPage extends StatefulWidget {
   const readPage({super.key});
@@ -124,7 +127,12 @@ There are many variations of passages of Lorem Ipsum available, but the majority
                 size: 28,
               ),
               onPressed: () {
-                
+                Navigator.of(context).push(MaterialPageRoute(
+                  builder: (context) {
+                    return homePage();
+                  }
+                ),
+                );
               },
             ),
             IconButton(
@@ -133,7 +141,12 @@ There are many variations of passages of Lorem Ipsum available, but the majority
                 size: 28,
               ),
               onPressed: () {
-                
+                Navigator.of(context).push(MaterialPageRoute(
+                  builder: (context) {
+                    return search2Page();
+                  }
+                ),
+                );
               },
             ),
             IconButton(
@@ -151,7 +164,12 @@ There are many variations of passages of Lorem Ipsum available, but the majority
                 size: 28,
               ),
               onPressed: () {
-                
+                Navigator.of(context).push(MaterialPageRoute(
+                  builder: (context) {
+                    return write1Page();
+                  }
+                ),
+                );
               },
             ),
           ],
